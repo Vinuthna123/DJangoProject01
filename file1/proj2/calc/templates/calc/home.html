@@ -1,0 +1,39 @@
+<style>
+div {
+  background-color: pink;
+  width:130px;
+  border: 5px solid black;
+  padding: 50px;
+  margin: 10px;
+}
+h2 {
+  margin: 30px;
+  }
+
+</style>
+<h2> CALCULATOR </h2>
+
+<p></p>
+<div>
+<form action="calculate/" method='GET'>
+
+<label for="fno" >First number:</label><br>
+  <input type="number" name="fno"><br>
+<label for="sno">Second number:</label><br>
+  <input type="number" name="sno"><br>
+<p></p>
+<label for="op">Operation:</label>
+  <select name="op">
+    <option value="add">add</option>
+    <option value="sub">sub</option>
+    <option value="mul">mul</option>
+    <option value="div">div</option>
+  </select>
+<p></p>
+<input type="submit" value="submit" />
+
+
+</form>
+</div>
+ <a href="{% url 'home' %}" > My Home</a>
+ 
